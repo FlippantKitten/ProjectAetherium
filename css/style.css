@@ -1,10 +1,12 @@
 body{
     background-color: #000;
     color: #fff; 
+    font-family: 'Inknut Antiqua', serif;
 }
 
 header{
     background-color:#444;
+    padding: 25px;
 }
 
 a {

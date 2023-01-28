@@ -9,27 +9,32 @@
   <meta name="description" content="A 2D roguelike RPG">
   <meta name="author" content="FlippantKitten">
   <link rel="stylesheet" href="css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body onload="navigateTo('Home')">
     <header>
         <h1>Project <div class="logoend">Aetherium</div></h1>
         <nav>
             <ul>
-                <li>Home</li>
-                <li><a>Inspirations</a></li>
-                <li><a>Features</a></li>
-                <li><a>About</a></li>
+                <li><button onclick="navigateTo('Home')">Home</button></li>
+                <li><button onclick="navigateTo('Inspirations')">Inspirations</button></li>
+                <li><button onclick="navigateTo('Features')">Features</button></li>
+                <li><button onclick="navigateTo('Faq')">Faq</button></li>
+                <li><button onclick="navigateTo('About')">About</button></li>
             </ul>
         </nav>
     </header>
 
-    <div>
+    <div id="Home" class="page">
         <h2>Project Aetherium</h2>
         <p>A 2D roguelite RPG with an evolving open world and a natural ecosystem with a main focus on emergent gameplay.</p>
     </div>
 
-    <div>
+    <div id="Inspirations" class="page">
         <h2>Inspirations</h2>
         <ul>
             <li>Ultima Online</li>
@@ -40,7 +45,7 @@
         </ul>
     </div>
 
-    <div>
+    <div id="Features" class="page">
         <h2>Features</h2>
         <ul>
             <li>Evolving open world that does not revolve around the player</li>
@@ -53,7 +58,15 @@
         </ul>
     </div>
 
-  <script src="js/scripts.js"></script>
+    <div id="Faq" class="page">
+        <h2>Faq</h2>
+    </div>
+
+    <div id="About" class="page">
+        <h2>About</h2>
+    </div>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>
