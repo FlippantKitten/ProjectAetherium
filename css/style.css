@@ -1,13 +1,24 @@
 body{
     background-color: #000;
-    color: #fff;
-    
+    color: #fff; 
+}
+
+header{
+    background-color:#444;
 }
 
 a {
     color: #ea8000;
   }
 
-h1{
-    background-color:#444;
+nav ul li{
+    display: inline;
+    list-style: none;
+}
+
+.logoend{
+    color: #000;
+    background-color: #ea8000;
+    border-radius: 3px;
+    display: inline;
 }
