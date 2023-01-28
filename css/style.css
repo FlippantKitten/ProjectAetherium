@@ -24,3 +24,15 @@ nav ul li{
     border-radius: 3px;
     display: inline;
 }
+
+table, th, td {
+    border: 1px solid;
+  }
+
+  th {
+    background-color:#444;
+  }
+
+  table {
+    border-collapse: collapse;
+  }
