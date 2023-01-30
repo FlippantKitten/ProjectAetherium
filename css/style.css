@@ -2,11 +2,32 @@ body{
     background-color: #000;
     color: #fff; 
     font-family: 'Inknut Antiqua', serif;
+    display: grid;
+    grid-template-columns: 30px auto 30px;;
+    grid-template-rows: 150px 60px auto 150px;
 }
 
 header{
     background-color:#444;
     padding: 25px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+nav{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.page{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
 }
 
 a {
